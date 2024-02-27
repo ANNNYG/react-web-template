@@ -1,0 +1,15 @@
+build/
+node_modules/
+package-lock.json
+yarn.lock
+*.DS_Store
+*.snap
+*.png
+*.svg
+*.gif
+*.mp4
+*.webm
+*.eot
+*.ttf
+*.woff
+*.woff2
