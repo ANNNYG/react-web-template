@@ -6,6 +6,7 @@
 
 ## 项目结构
 
+```
 |-- .husky 提交勾子
 |-- config 打包配置
 |-- public 公共资源
@@ -22,3 +23,5 @@
 |-- router 路由相关
 |-- store redux相关
 |-- utils 工具文件夹
+
+```
