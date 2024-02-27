@@ -1,0 +1,12 @@
+{
+  "primary-color": "#1890ff",
+  "border-radius-base": "6px",
+  "line-height-base": "1.5",
+
+  "btn-height-base": "36px",
+  "input-height-base": "36px",
+  "select-dropdown-height": "36px",
+
+  "primaryColor": "#1890ff",
+  "primaryHoverColor": "#40a9ff"
+}
