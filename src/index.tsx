@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client';
 import { ConfigProvider, message } from 'antd';
 import dayjs from 'dayjs';
 import { ThemeProvider } from 'styled-components';
+import { Provider } from 'react-redux';
 
 import zhCN from 'antd/es/locale/zh_CN';
 import 'dayjs/locale/zh-cn';
@@ -12,6 +13,7 @@ import 'antd/dist/reset.css';
 import App from '@/page/App/App';
 import { antd_style_theme } from '@/common/antd_style_config';
 import styled_config from '@/common/styled_config.json';
+import { store } from '@/store';
 
 dayjs.locale('zh-cn');
 
@@ -31,7 +33,9 @@ root.render(
     theme={antd_style_theme}
   >
     <ThemeProvider theme={styled_config}>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </ThemeProvider>
   </ConfigProvider>,
 );
