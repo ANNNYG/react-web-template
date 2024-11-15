@@ -109,6 +109,12 @@ checkBrowsers(paths.appPath, isInteractive)
       ...createDevServerConfig(proxyConfig, urls.lanUrlForConfig),
       host: HOST,
       port,
+      proxy: {
+        '/api': {
+          target: 'http://127.0.0.1:8010',
+          changeOrigin: true,
+        },
+      },
     };
     const devServer = new WebpackDevServer(serverConfig, compiler);
     // Launch WebpackDevServer.
